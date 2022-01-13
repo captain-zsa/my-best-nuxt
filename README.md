@@ -1,4 +1,4 @@
-# Сборка nuxt и всякого для старта разработки
+# Главный сайт ingrad.ru
 
 __Стэк проекта:__
 - Vue.js v2
@@ -53,6 +53,7 @@ npm run "<task>" # запуск сценария
 * Как писать БЭМ [bem](doc/bem/readme.md)
 * Как писать стили [styles](doc/styles/readme.md)
 * Тестирование компонентов [test](doc/test/readme.md)
+* "Почти автоматическое" создание структуры файлов компонента [generatefiles](doc/generate/readme.md)
 
 ## Файловая структура
 
