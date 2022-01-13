@@ -27,6 +27,12 @@ export default {
         '~/assets/styles/main.scss',
     ],
 
+    styleResources : {
+        scss : [
+            '~/assets/styles/ds-system/ds.scss',
+        ],
+    },
+
     // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
     plugins : [
     ],
@@ -45,6 +51,8 @@ export default {
 
         // https://go.nuxtjs.dev/stylelint
         '@nuxtjs/stylelint-module',
+
+        '@nuxtjs/style-resources',
     ],
 
     // Modules: https://go.nuxtjs.dev/config-modules
@@ -59,6 +67,25 @@ export default {
 
     // Build Configuration: https://go.nuxtjs.dev/config-build
     build : {
+        postcss : {
+
+            // Add plugin names as key and arguments as value
+            // Install them before as dependencies with npm or yarn
+            plugins : {
+
+                // Disable a plugin by passing false as value
+                'postcss-import' : true,
+                'postcss-url'    : false,
+                'postcss-nested' : {},
+            },
+            preset : {
+
+                // Change the postcss-preset-env settings
+                autoprefixer : {
+                    grid : true,
+                },
+            },
+        },
     },
 
     storybook : {

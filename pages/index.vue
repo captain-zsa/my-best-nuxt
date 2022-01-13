@@ -6,9 +6,9 @@
                 new-nuxt
             </h1>
             <div class="links">
-                <button @click="clickToButton">
+                <app-button @click="clickToButton">
                     Показать лого
-                </button>
+                </app-button>
                 <a
                     href="https://nuxtjs.org/"
                     target="_blank"

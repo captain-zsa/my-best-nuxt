@@ -1,0 +1,75 @@
+@mixin typography-template($font-size, $line-height, $font-weight: 400) {
+    font-family: inherit;
+    font-size: $font-size;
+    font-weight: $font-weight;
+    font-style: normal;
+    line-height: $line-height;
+}
+
+@mixin r-s11-h14 {
+    @include typography-template(11px, 14px);
+}
+
+@mixin r-s12-h14 {
+    @include typography-template(12px, 14px);
+}
+
+@mixin r-s13-h15 {
+    @include typography-template(13px, 15px);
+}
+
+@mixin r-s13-h18 {
+    @include typography-template(13px, 18px);
+}
+
+@mixin r-s14-h16 {
+    @include typography-template(14px, 16px);
+}
+
+@mixin r-s14-h20 {
+    @include typography-template(14px, 20px);
+}
+
+@mixin r-s15-h20 {
+    @include typography-template(15px, 20px);
+}
+
+@mixin r-s15-h22 {
+    @include typography-template(15px, 22px);
+}
+
+@mixin r-s16-h19 {
+    @include typography-template(16px, 19px);
+}
+
+@mixin m-s15-h18 {
+    @include typography-template(15px, 18px, 500);
+}
+
+@mixin m-s18-h21 {
+    @include typography-template(18px, 21px, 500);
+}
+
+@mixin s-s14-h20 {
+    @include typography-template(14px, 20px, 600);
+}
+
+@mixin s-s15-h22 {
+    @include typography-template(15px, 22px, 600);
+}
+
+@mixin s-s18-h22 {
+    @include typography-template(18px, 22px, 600);
+}
+
+@mixin s-s20-h26 {
+    @include typography-template(20px, 26px, 600);
+}
+
+@mixin s-s30-h37 {
+    @include typography-template(30px, 37px, 600);
+}
+
+@mixin b-s18-h21 {
+    @include typography-template(18px, 21px, 700);
+}

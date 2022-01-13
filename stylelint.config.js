@@ -123,5 +123,7 @@ module.exports = {
         'value-list-comma-newline-after'                    : 'always-multi-line',
         'value-list-comma-space-after'                      : 'always-single-line',
         'value-list-comma-space-before'                     : 'never',
+        'at-rule-no-unknown'                                : null,
+        'scss/at-rule-no-unknown'                           : true,
     },
 };
