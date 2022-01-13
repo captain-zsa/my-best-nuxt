@@ -8,6 +8,7 @@
         @mouseout="buttonOut"
         @click="clickButton($event)"
     >
+        Test
         <loader
             v-if="isButtonLoading"
             :color="loadingColor"

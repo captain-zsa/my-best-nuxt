@@ -6,8 +6,8 @@
                 new-nuxt
             </h1>
             <div class="links">
-                <app-button @click="clickToButton">
-                    Показать лого
+                <app-button @click.native="clickToButton()">
+                    Скрыть/показать лого
                 </app-button>
                 <a
                     href="https://nuxtjs.org/"

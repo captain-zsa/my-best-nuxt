@@ -2,9 +2,9 @@ export default {
 
     // Global page headers: https://go.nuxtjs.dev/config-head
     head : {
-        title     : 'ГК Инград | Квартиры в новостройках Москвы и области от застройщика',
+        title     : 'Главная страница',
         htmlAttrs : {
-            lang : 'en',
+            lang : 'ru',
         },
         meta : [
             { charset: 'utf-8' },
@@ -67,25 +67,25 @@ export default {
 
     // Build Configuration: https://go.nuxtjs.dev/config-build
     build : {
-        postcss : {
+        // postcss : {
 
-            // Add plugin names as key and arguments as value
-            // Install them before as dependencies with npm or yarn
-            plugins : {
+        //     // Add plugin names as key and arguments as value
+        //     // Install them before as dependencies with npm or yarn
+        //     plugins : {
 
-                // Disable a plugin by passing false as value
-                'postcss-import' : true,
-                'postcss-url'    : false,
-                'postcss-nested' : {},
-            },
-            preset : {
+        //         // Disable a plugin by passing false as value
+        //         'postcss-import' : true,
+        //         'postcss-url'    : false,
+        //         'postcss-nested' : {},
+        //     },
+        //     preset : {
 
-                // Change the postcss-preset-env settings
-                autoprefixer : {
-                    grid : true,
-                },
-            },
-        },
+        //         // Change the postcss-preset-env settings
+        //         autoprefixer : {
+        //             grid : true,
+        //         },
+        //     },
+        // },
     },
 
     storybook : {
