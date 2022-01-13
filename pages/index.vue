@@ -1,11 +1,14 @@
 <template>
     <div class="container">
         <div>
-            <Logo />
+            <logo v-if="condition" />
             <h1 class="title">
                 new-nuxt
             </h1>
             <div class="links">
+                <button @click="clickToButton">
+                    Показать лого
+                </button>
                 <a
                     href="https://nuxtjs.org/"
                     target="_blank"
@@ -28,7 +31,19 @@
 </template>
 
 <script>
-export default {};
+export default {
+    data() {
+        return {
+            condition : false,
+        };
+    },
+
+    methods : {
+        clickToButton() {
+            this.condition = !this.condition;
+        },
+    },
+};
 </script>
 
 <style lang="scss">

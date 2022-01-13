@@ -89,3 +89,7 @@ sw.*
 
 # VSCode settings
 .vscode
+
+# StoryBook
+.nuxt-storybook
+storybook-static

@@ -2,7 +2,7 @@ export default {
 
     // Global page headers: https://go.nuxtjs.dev/config-head
     head : {
-        title     : 'main-ingrad',
+        title     : 'ГК Инград | Квартиры в новостройках Москвы и области от застройщика',
         htmlAttrs : {
             lang : 'en',
         },
@@ -32,7 +32,10 @@ export default {
     ],
 
     // Auto import components: https://go.nuxtjs.dev/config-components
-    components : true,
+    components : [{
+        path       : '~/components',
+        extensions : ['vue'],
+    }],
 
     // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
     buildModules : [
